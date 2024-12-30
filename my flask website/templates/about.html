@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Gym Management</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 1rem 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        nav ul li a:hover {
+            color: #81C784;
+        }
+
+        h1, h2 {
+            color: #333;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        h1.fade-in, h2.fade-in {
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        p {
+            text-align: center;
+            color: #555;
+            line-height: 1.6;
+            font-size: 1.1rem;
+            margin: 1rem auto;
+            max-width: 800px;
+        }
+
+        .team {
+            background-color: #ffffff;
+            padding: 3rem 1rem;
+            margin: 2rem 0;
+        }
+
+        .team-members {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .team-member {
+            background-color: #f4f4f9;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 280px;
+        }
+
+        .team-member img {
+            width: 100%;
+            border-radius: 8px;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .team-member h3 {
+            margin-top: 1rem;
+            font-size: 1.3rem;
+            color: #333;
+        }
+
+        .team-member p {
+            font-size: 1rem;
+            color: #777;
+            margin-top: 0.5rem;
+        }
+
+        .mission {
+            background-color: #81C784;
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        .mission p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            .team-members {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/membership">Membership Plans</a></li>
+            <li><a href="/registerpage">Register</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/about">About Us</a></li>
+        </ul>
+    </nav>
+
+    <h1 class="fade-in">About Our Gym</h1>
+    <p class="fade-in">We are committed to helping you achieve your fitness goals. Our gym is equipped with top-of-the-line equipment and features a team of professional trainers.</p>
+    <p class="fade-in">Our mission is to create a healthy community that encourages fitness and well-being for everyone. Join us and transform your life!</p>
+
+    <section class="team fade-in">
+        <h2>Meet Our Team</h2>
+        <div class="team-members">
+            <div class="team-member">
+                <img src="static/istockphoto-925395994-1024x1024.jpg" alt="Trainer Marcos">
+                <h3>Marcos Wlliam</h3>
+                <p>Head Trainer with 10+ years of experience in fitness and nutrition.</p>
+            </div>
+            <div class="team-member">
+                <img src="static/istockphoto-531326798-1024x1024.jpg" alt="Trainer Chris">
+                <h3>Chris Lamuel</h3>
+                <p>Yoga and mindfulness expert, helping you achieve balance in life.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="mission fade-in">
+        <h2>Our Mission</h2>
+        <p>To create an inclusive environment where everyone can pursue health and wellness at their own pace, supported by expert guidance and top-notch facilities.</p>
+    </section>
+
+    <footer>
+        <p style="color: #ffffff;">&copy; 2024 Gym Management | Contact Us: fitnesstan@gym.com</p>
+    </footer>
+</body>
+</html>
